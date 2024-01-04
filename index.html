@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cyber Phim</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" href="./lib/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">CYBER PHIM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LỊCH CHIẾU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CỤM RẠP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-user"></i>ĐĂNG NHẬP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/bg_cs_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/bg_cs_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/bg_cs_3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+        </section>
+
+        <section id="chooseFilm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10">
+                        <div class="row">
+                            <div class="col-6 col-lg-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>Chọn phim</span> <i class="fa-solid fa-arrow-down-long"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Quỷ CẨU</a></li>
+                                        <li><a class="dropdown-item" href="#">KẺ ĂN HỒN</a></li>
+                                        <li><a class="dropdown-item" href="#">WONKA</a></li>
+                                        <li><a class="dropdown-item" href="#">THIẾU NIÊN VÀ CHIM DIỆC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>Chọn rạp</span> <i class="fa-solid fa-arrow-down-long"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">CGV</a></li>
+                                        <li><a class="dropdown-item" href="#">LOTTERIA</a></li>
+                                        <li><a class="dropdown-item" href="#">GALAXY</a></li>
+                                        <li><a class="dropdown-item" href="#">CINESTAR</a></li>
+                                        <li><a class="dropdown-item" href="#">BETA</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>Chọn ngày</span> <i class="fa-solid fa-arrow-down-long"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">28/12/2023</a></li>
+                                        <li><a class="dropdown-item" href="#">29/12/2023</a></li>
+                                        <li><a class="dropdown-item" href="#">30/12/2023</a></li>
+                                        <li><a class="dropdown-item" href="#">31/12/2023</a></li>
+                                        <li><a class="dropdown-item" href="#">1/1/2024</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>Chọn suất</span> <i class="fa-solid fa-arrow-down-long"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">9:30</a></li>
+                                        <li><a class="dropdown-item" href="#">12:00</a></li>
+                                        <li><a class="dropdown-item" href="#">15:00</a></li>
+                                        <li><a class="dropdown-item" href="#">17:30</a></li>
+                                        <li><a class="dropdown-item" href="#">21:45</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <button class="btn btn-info btn_muaVe">Mua vé</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menuFilm">
+            <div class="content container">
+                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                    <li class="nav-item col-6 dangchieu" role="presentation">
+                        <a class="nav-link active" id="dangchieu-tab" data-bs-toggle="tab" data-bs-target="#dangchieu"
+                            type="button" role="tab" aria-controls="dangchieu" aria-selected="true">PHIM ĐANG CHIẾU</a>
+                    </li>
+                    <li class="nav-item col-6 sapchieu" role="presentation">
+                        <button class="nav-link" id="sapchieu-tab" data-bs-toggle="tab" data-bs-target="#sapchieu"
+                            type="button" role="tab" aria-controls="sapchieu" aria-selected="false">PHIM SẮP
+                            CHIẾU</button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dangchieu" role="tabpanel" aria-labelledby="dangchieu-tab">
+                        <div class="dangchieu_container">
+                            <div class="dangchieu_content">
+                                <div class="dangchieu_item">
+                                    <img src="./images/dangchieu_1.jpg" alt="">
+                                    <h5>Aquaman Và Vương Quốc Thất Lạc</h5>
+                                    <p>124 Phút</p>
+                                </div>
+                                <div class="dangchieu_item">
+                                    <img src="./images/dangchieu_2.jpg" alt="">
+                                    <h5>Quỷ Cẩu</h5>
+                                    <p>99 Phút</p>
+                                </div>
+                                <div class="dangchieu_item">
+                                    <img src="./images/dangchieu_3.jpg" alt="">
+                                    <h5>Tee Yod: Quỷ Ăn Tạng</h5>
+                                    <p>119 Phút</p>
+                                </div>
+                                <div class="dangchieu_item">
+                                    <img src="./images/dangchieu_4.jpg" alt="">
+                                    <h5>Wonka</h5>
+                                    <p>116 Phút</p>
+                                </div>
+                                <div class="dangchieu_item">
+                                    <img src="./images/dangchieu_5.jpg" alt="">
+                                    <h5>Trên Bàn Nhậu Dưới Bàn Mưu</h5>
+                                    <p>116 Phút</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sapchieu" role="tabpanel" aria-labelledby="sapchieu-tab">
+                        <div class="sapchieu_container">
+                            <div class="sapchieu_content">
+                                <div class="sapchieu_item">
+                                    <img src="./images/sapchieu_1.jpg" alt="">
+                                    <h5>Cuốc Xe Chết</h5>
+                                    <p>05/01/2024</p>
+                                </div>
+                                <div class="sapchieu_item">
+                                    <img src="./images/sapchieu_2.jpg" alt="">
+                                    <h5>Alienoid: Đa Chiều Hỗn Chiến</h5>
+                                    <p>11/01/2024</p>
+                                </div>
+                                <div class="sapchieu_item">
+                                    <img src="./images/sapchieu_3.jpg" alt="">
+                                    <h5>Argylle Siêu Điệp Viên</h5>
+                                    <p>10/02/2024</p>
+                                </div>
+                                <div class="sapchieu_item">
+                                    <img src="./images/sapchieu_4.jpg" alt="">
+                                    <h5>Gặp Lại Chị Bầu</h5>
+                                    <p>10/02/2024</p>
+                                </div>
+                                <div class="sapchieu_item">
+                                    <img src="./images/sapchieu_5.jpg" alt="">
+                                    <h5>Mai</h5>
+                                    <p>10/02/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menuCinema">
+            <div class="content container">
+                <div class="title"><span>CỤM RẠP</span></div>
+
+                <ul class="nav nav-tabs list_rap row" id="myTab" role="tablist">
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_cgv.jpg" alt="" class="nav-link active" id="cgv-tab"
+                            data-bs-toggle="tab" data-bs-target="#cgv" type="button" role="tab" aria-controls="cgv"
+                            aria-selected="true">
+                    </li>
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_bhd.jpg" alt="" class="nav-link" id="bhd-tab" data-bs-toggle="tab"
+                            data-bs-target="#bhd" type="button" role="tab" aria-controls="bhd" aria-selected="true">
+                    </li>
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_galaxycine.jpg" alt="" class="nav-link" id="galaxy-tab"
+                            data-bs-toggle="tab" data-bs-target="#galaxy" type="button" role="tab"
+                            aria-controls="galaxy" aria-selected="true">
+                    </li>
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_lotteria.jpg" alt="" class="nav-link" id="lotteria-tab"
+                            data-bs-toggle="tab" data-bs-target="#lotteria" type="button" role="tab"
+                            aria-controls="lotteria" aria-selected="true">
+                    </li>
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_mega.jpg" alt="" class="nav-link" id="mega-tab" data-bs-toggle="tab"
+                            data-bs-target="#mega" type="button" role="tab" aria-controls="mega" aria-selected="true">
+                    </li>
+                    <li class="nav-item col-3 col-md-2" role="presentation">
+                        <img src="./images/logo_beta.jpg" alt="" class="nav-link" id="beta-tab" data-bs-toggle="tab"
+                            data-bs-target="#beta" type="button" role="tab" aria-controls="beta" aria-selected="true">
+                    </li>
+                </ul>
+
+                <div class="tab-content rapandfilm">
+                    <div class="tab-pane active" id="cgv" role="tabpanel" aria-labelledby="cgv-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="cgv_svh-tab" data-bs-toggle="tab"
+                                            data-bs-target="#cgv_svh" type="button" role="tab" aria-controls="cgv_svh"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/cgv_svh.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>CGV </span>Sư Vạn Hạnh</h6>
+                                                    <p>Tầng 6, Vạn Hạnh Mall, 11 Đ. Sư Vạn Hạnh, Phường 12, Quận 10,
+                                                        Thành
+                                                        phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="cgv_csm-tab" data-bs-toggle="tab"
+                                            data-bs-target="#cgv_csm" type="button" role="tab" aria-controls="cgv_csm"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/cgv_cresentmall.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>CGV </span>Cresent Mall</h6>
+                                                    <p>Tầng 4, Crescent Mall, Đ. Nguyễn Văn Linh, Tân Phú, Quận 7, Thành
+                                                        phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="cgv_sc-tab" data-bs-toggle="tab"
+                                            data-bs-target="#cgv_sc" type="button" role="tab" aria-controls="cgv_sc"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/cgv_sc.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>CGV </span>SC VivoCity</h6>
+                                                    <p>Tầng 5, Trung tâm thương mại SC VivoCity, 1058 Đ. Nguyễn Văn
+                                                        Linh, Tân Phong, Quận 7, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="cgv_svh" role="tabpanel"
+                                        aria-labelledby="cgv_svh-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="cgv_csm" role="tabpanel" aria-labelledby="cgv_csm-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="cgv_sc" role="tabpanel" aria-labelledby="cgv_sc-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="bhd" role="tabpanel" aria-labelledby="bhd-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="bhd_32-tab" data-bs-toggle="tab"
+                                            data-bs-target="#bhd_32" type="button" role="tab" aria-controls="bhd_32"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/bhd_32.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>BHD Star</span> Cineplex</h6>
+                                                    <p>Vincom Plaza 3/2, 3C Đ. 3 Tháng 2, Phường 11, Quận 10, Thành phố
+                                                        Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="bhd_td-tab" data-bs-toggle="tab"
+                                            data-bs-target="#bhd_td" type="button" role="tab" aria-controls="bhd_td"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/bhd_td.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>BHD Star </span>THAO DIEN</h6>
+                                                    <p>Tầng 5, TTTM Vincom Mega Mall, 159 Đ. Võ Nguyên Giáp, Thảo Điền,
+                                                        Quận 2, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="bhd_32" role="tabpanel"
+                                        aria-labelledby="bhd_32-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="bhd_td" role="tabpanel" aria-labelledby="bhd_td-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="galaxy" role="tabpanel" aria-labelledby="galaxy-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="galaxy_htp-tab" data-bs-toggle="tab"
+                                            data-bs-target="#galaxy_htp" type="button" role="tab"
+                                            aria-controls="galaxy_htp" aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/galaxy_htp.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Galaxy Cinema </span>Huỳnh Tấn Phát</h6>
+                                                    <p>1362 Huỳnh Tấn Phát, Phú Mỹ, Quận 7, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="galaxy_nd-tab" data-bs-toggle="tab"
+                                            data-bs-target="#galaxy_nd" type="button" role="tab"
+                                            aria-controls="galaxy_nd" aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/galaxy_nd.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Galaxy Cinema </span>Nguyễn Du</h6>
+                                                    <p>116 Đ. Nguyễn Du, Phường Bến Thành, Quận 1, Thành phố Hồ Chí Minh
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="galaxy_tb-tab" data-bs-toggle="tab"
+                                            data-bs-target="#galaxy_tb" type="button" role="tab"
+                                            aria-controls="galaxy_tb" aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/galaxy_tb.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Galaxy Cinema </span>Tân Bình</h6>
+                                                    <p>246 Đ. Nguyễn Hồng Đào, Phường 13, Tân Bình, Thành phố Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="galaxy_htp" role="tabpanel"
+                                        aria-labelledby="galaxy_htp-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="galaxy_nd" role="tabpanel"
+                                        aria-labelledby="galaxy_nd-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="galaxy_tb" role="tabpanel"
+                                        aria-labelledby="galaxy_tb-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="lotteria" role="tabpanel" aria-labelledby="lotteria-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="lotteria_gv-tab" data-bs-toggle="tab"
+                                            data-bs-target="#lotteria_gv" type="button" role="tab"
+                                            aria-controls="lotteria_gv" aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/lotteria_gv.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Lotte Cinema</span> Go Vap</h6>
+                                                    <p>Lotte Mart, 242 Nguyễn Văn Lượng, Phường 10, Gò Vấp, Thành phố Hồ
+                                                        Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="lotteria_q7-tab" data-bs-toggle="tab"
+                                            data-bs-target="#lotteria_q7" type="button" role="tab"
+                                            aria-controls="lotteria_q7" aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/lotteria_q7.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Lotte Cinema </span>Nam Sài Gòn</h6>
+                                                    <p>Lotte Mart, Tầng 3 Lotte Mart NSG, 469 Đ. Nguyễn Hữu Thọ, Tân
+                                                        Hưng, Quận 7, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="lotteria_gv" role="tabpanel"
+                                        aria-labelledby="lotteria_gv-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="lotteria_q7" role="tabpanel"
+                                        aria-labelledby="lotteria_q7-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="mega" role="tabpanel" aria-labelledby="mega-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="mega_ct-tab" data-bs-toggle="tab"
+                                            data-bs-target="#mega_ct" type="button" role="tab" aria-controls="mega_ct"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/mega_ct.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Mega GS Cinemas</span> Cao Thắng</h6>
+                                                    <p>19 Đ. Cao Thắng, Phường 2, Quận 3, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link" id="mega_lct-tab" data-bs-toggle="tab"
+                                            data-bs-target="#mega_lct" type="button" role="tab" aria-controls="mega_lct"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img class="rapImage" src="./images/mega_lct.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Mega GS Cinemas </span>Lý Chính Thắng</h6>
+                                                    <p>212 Lý Chính Thắng, Phường 9, Quận 3, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="mega_ct" role="tabpanel"
+                                        aria-labelledby="mega_ct-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="mega_lct" role="tabpanel" aria-labelledby="mega_lct-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Tee Yod: Quỷ ăn tạng</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="beta" role="tabpanel" aria-labelledby="beta-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-5 dsRap">
+                                <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <div class="rap_item nav-link active" id="beta_qt-tab" data-bs-toggle="tab"
+                                            data-bs-target="#beta_qt" type="button" role="tab" aria-controls="beta_qt"
+                                            aria-selected="true" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <img src="./images/beta_qt.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-7 col-xl-8">
+                                                    <h6><span>Beta Cinemas</span> Quang Trung</h6>
+                                                    <p>645 Quang Trung, Phường 11, Gò Vấp, Thành phố Hồ Chí Minh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-8 col-lg-7">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="beta_qt" role="tabpanel"
+                                        aria-labelledby="beta_qt-tab">
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_1.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Aquaman và vương quốc thất lạc</h5>
+                                                <p>124 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:45</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">22:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_2.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Quỷ cẩu</h5>
+                                                <p>99 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">23:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_3.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_4.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Wonka</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">9:30</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">17:00</p>
+                                                </div>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">3D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">20:45</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="film row">
+                                            <div class="col-12 col-md-6 col-lg-5 col-xl-2">
+                                                <img src="./images/dangchieu_5.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-7 col-xl-10">
+                                                <h5>Trên bàn nhậu dưới bàn mưu</h5>
+                                                <p>116 phút</p>
+                                                <div class="tt row">
+                                                    <p class="type col-4 col-sm-3 col-xl-1 ">2D</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">14:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">16:00</p>
+                                                    <p class="time col-10 col-sm-3 col-md-4 col-xl-2">19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="infor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 news">
+                        <h1>TIN TỨC</h1>
+                        <div class="list__news">
+                            <div class="row news__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/news_0.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5>Bộ phim “nóng” nhất mùa hè 2005: Mr & Mrs Smith</h5>
+                                    <span class="like">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span>Thích 1,8k</span>
+                                    </span>
+                                    <p>Bộ phim Mr & Mrs Smith do Doug Liman đạo diễn với sự tham gia của hai ngôi sao
+                                        được mệnh...</p>
+                                </div>
+                            </div>
+                            <div class="row news__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/news_1.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5>'Wonder Woman 3' không xuất hiện trong Vũ trụ DC mới</h5>
+                                    <span class="like">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span>Thích 1,8k</span>
+                                    </span>
+                                    <p>Tin đồn bom tấn Wonder Woman 3 của Warner Bros. và DC Studios sẽ không khởi quay
+                                        đang...</p>
+                                </div>
+                            </div>
+                            <div class="row news__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/news_2.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5>‘Jurassic World Dominion’: Phần kết hoành tráng cho thế giới khủng long</h5>
+                                    <span class="like">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span>Thích 1,8k</span>
+                                    </span>
+                                    <p>Những chú khủng long to lớn, mạnh mẽ cùng câu chuyện kịch tính, mang cả chất hoài
+                                        niệm lẫn ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 review">
+                        <h1>REVIEW</h1>
+                        <div class="list__review">
+                            <div class="row review__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/review_0.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5><a href="">Review</a> “NHÀ BÀ NỮ”: Phim tết này liệu có đáng xem</h5>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <p>Lần đầu tự tay đạo diễn, Trấn Thành tạo ra "Nhà Bà Nữ" mang nét gẫn gũi, gây xúc
+                                        động. Đây...</p>
+                                </div>
+                            </div>
+                            <div class="row review__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/review_1.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5><a href="">Review</a> Minions: Sự Trỗi Dậy Của Gru – đơn giản, nhẹ nhàng nhưng
+                                        tràn...
+                                    </h5>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <p>Minions: Sự Trỗi Dậy Của Gru được xem là cầu nối hoàn hảo giữa câu chuyện nguồn
+                                        gốc về cậu...</p>
+                                </div>
+                            </div>
+                            <div class="row review__item">
+                                <div class="content_left col-12 col-md-6 col-lg-12 col-xl-5">
+                                    <img src="./images/review_2.jpg" alt="" srcset="">
+                                </div>
+                                <div class="content_right col-12 col-md-6 col-lg-12 col-xl-7">
+                                    <h5><a href="">Review</a> Lật Mặt 6 - Kịch bản lắt léo nhiều kịch tính</h5>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <p>Lật Mặt từ lâu là một thương hiệu phim mỗi dịp 30/04 - 01/05 sẽ càn quét phòng
+                                        vé! Đơn giản...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="image"></section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h1>CYBER PHIM</h1>
+                    <p>Cyber phim laf website đặt vé xem phim trực tuyến tại các rạp BHD, Galaxy, Cinebox. Cyber Phim
+                        giúp bạn mua vé trước để không phải đến rạp sớm xếp hàng mua vé hoặc lo lắng về việc hết vé. Bên
+                        cạnh đó, Cyber Phim còn cập nhật thường xuyên ccas thông tin phim như trailer, tin tức, thông
+                        tin rạp, suất chiếu, các đnahs giá phim, chương trình khuyến mãi từ rạp và của riêng CyberPhim
+                        dành cho người sử dụng</p>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 offset-xl-1 col-xl-3 item">
+                            <h5 class="vct">Về chung tôi</h5>
+                            <ul>
+                                <li class="item_content"><a href="">Giới thiệu</a></li>
+                                <li><a href="">Lịch chiếu</a></li>
+                                <li><a href="">Cụm rạp</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 offset-sm-1 col-sm-6 offset-xl-1 col-xl-3 item">
+                            <h5 class="cskh">Chăm sóc khách hàng</h5>
+                            <ul>
+                                <li><a href="">Trung tâm hỗ trợ</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Quy chế hoạt động</a></li>
+                                <li><a href="">Quyền lợi thành viên</a></li>
+                                <li><a href="">Câu hỏi thường gặp</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 offset-xl-1 col-xl-3 item">
+                            <h5 class="dt">Đối tác</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./images/logo_cgv.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_bhd.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_beta.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_galaxycine.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_mega.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_lotteria.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/momo.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/zalopay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- slick carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./lib/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dangchieu_content').slick({
+                infinite: true,
+                slidesToShow: 4,
+                autoplay: true,
+                arrows: true,
+                dots: false,
+            });
+        });
+        $(document).ready(function () {
+            $('.sapchieu_content').slick({
+                infinite: true,
+                slidesToShow: 4,
+                autoplay: true,
+                arrows: true,
+                dots: false,
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

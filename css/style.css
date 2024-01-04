@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .navbar {
+    background-color: black !important;
+}
+
+header .navbar-brand,
+header .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+header button.navbar-toggler {
+    background-color: white !important;
+}
+
+header .navbar-brand {
+    padding: 0.5rem 0;
+    font-size: 2rem !important;
+    font-weight: bold;
+}
+
+header .nav-item a i {
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+header #navbarNav ul li {
+    margin-right: 1.5rem;
+}
+
+#chooseFilm {
+    background-color: rgb(34, 34, 34);
+    padding: 2rem 0;
+}
+
+#chooseFilm .dropdown button {
+    background-color: rgb(53, 53, 53);
+    border: 1px solid rgb(53, 53, 53);
+}
+
+#chooseFilm button {
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 3rem;
+    border-radius: 1.2rem;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#chooseFilm .dropdown span {
+    width: 80%;
+    text-align: left;
+}
+
+#chooseFilm .dropdown i {
+    width: 20%;
+    text-align: right;
+    font-weight: bold;
+}
+
+#chooseFilm .dropdown-menu {
+    width: 100%;
+    background-color: rgb(53, 53, 53) !important;
+
+}
+
+#chooseFilm .btn_muaVe {
+    text-align: center !important;
+    display: inline;
+}
+
+#menuFilm {
+    background-color: rgb(34, 34, 34);
+    padding: 0.5rem 0;
+}
+
+#menuFilm .content .dangchieu {
+    text-align: right;
+}
+
+#menuFilm .content .sapchieu {
+    text-align: left;
+}
+
+#menuFilm .nav-tabs {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#menuFilm .nav-tabs {
+    border: none;
+}
+
+#menuFilm .nav-tabs .nav-link {
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(34, 34, 34);
+}
+
+#menuFilm .nav-tabs .nav-link.active {
+    color: #20c8e9;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(34, 34, 34);
+    text-decoration: underline;
+}
+
+#menuFilm .tab-content {
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+#menuFilm img {
+    width: 100%;
+    height: auto;
+}
+
+#menuFilm .dangchieu_item {
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+#menuFilm .sapchieu_item {
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+#menuFilm h5 {
+    margin-top: 0.5rem;
+}
+
+#menuCinema{
+    padding: 3rem 0;
+    background-color: rgb(34, 34, 34);
+}
+
+#menuCinema .nav-tabs {
+    border: none;
+    background-color: rgb(34, 34, 34);
+
+}
+
+#menuCinema .nav-item{
+    background-color: rgb(34, 34, 34);
+    margin: 2rem 0;
+    padding: 0rem;
+}
+
+#menuCinema .title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#menuCinema .title span{
+    color: #20c8e9;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+#menuCinema .title span:after {
+    content: "";
+    width: 9rem;
+    display: block;
+    height: 3px;
+    background-color:#20c8e9;
+    position: absolute;
+    left: 0;
+}
+
+#menuCinema .nav-tabs.list_rap img{
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+    border-radius: 50%;
+    background-color: rgb(34, 34, 34);
+    border: none;
+    filter:opacity(20%);
+}
+
+#menuCinema .nav-tabs.list_rap img.active{
+    filter: opacity(100%);
+}
+
+#menuCinema .tab-content.rapandfilm{
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+#menuCinema .tab-content .dsRap{
+    border-right: 3px dashed white;
+}
+
+ #menuCinema .rap_item {
+    filter: opacity(20%);
+    background-color: rgb(34, 34, 34) !important;
+    border: none;
+    filter:opacity(20%);
+    margin-top: 1rem;
+}
+
+#menuCinema .dsRap li{
+    margin: 0;
+}
+
+#menuCinema .rap_item.active{
+    filter:opacity(100%);
+}
+
+#menuCinema .rap_item img{
+    width: 100%;
+    height: auto;
+    background-color: rgb(34, 34, 34);
+}
+#menuCinema .film{
+    margin: 1rem 0 0 0.5rem;
+}
+
+#menuCinema .film img{
+    width: 100%;
+}
+
+#menuCinema span{
+    color: red;
+}
+
+#menuCinema p.type{
+    color: white;
+    background-color: #20c8e9;
+    text-align: center;
+}
+
+#menuCinema p.time{
+    color: white;
+    background-color: #696a6a;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 2rem;
+} 
+
+#menuCinema .tt p.time:hover{
+    background-color: black;
+    cursor: pointer; 
+}
+
+#infor {
+    padding: 3rem 0 5rem 0;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+#infor .news {
+    padding-right: 1rem;
+}
+
+#infor .review {
+    padding-left: 1rem;
+}
+
+#infor h1 {
+    color: #20c8e9;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#infor h1:after {
+    content: '';
+    width: 7.5rem;
+    height: 3px;
+    background-color: #20c8e9;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+}
+
+#infor img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#infor h5 {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+#infor .like {
+    background-color: #0d6efd;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#infor .like span {
+    margin-left: 0.3rem;
+}
+
+#infor .news__item {
+    margin-top: 2rem;
+}
+
+#infor button {
+    margin-top: 0.5rem;
+}
+
+#infor p {
+    padding-top: 1rem;
+}
+
+#infor .review u {
+    color: rgb(34, 100, 192);
+    cursor: pointer;
+}
+
+#infor .review i {
+    color: rgb(230, 227, 50);
+}
+
+#infor .review__item {
+    margin-top: 2rem;
+}
+
+#image {
+    width: 100%;
+    height: 30rem;
+    background-image: url("./../images/wrappicture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 2.5rem 0;
+    font-size: 1rem;
+}
+
+footer h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+footer h5 {
+    margin: 0.5rem 0 1rem 0;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+footer img{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+footer ul li{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+footer ul li a{
+    text-decoration: none;
+    margin-left: -2rem;
+    color: white;
+    position: relative;
+}
+
+footer h5:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color:#20c8e9;
+    position: absolute;
+    left: 0rem;
+    width: 100%;
+}
+
+footer .item ul li:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: -2rem;
+    width: 120%;
+}
