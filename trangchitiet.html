@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">CYBER PHIM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LỊCH CHIẾU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CỤM RẠP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-user"></i>ĐĂNG NHẬP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="movieDetail">
+            <div class="container content">
+                <div class="row">
+                    <div class="content_left col-12 col-md-6 col-lg-5 col-xl-4">
+                        <div class="row">
+                            <img src="./images/sapchieu_5.jpg" alt="" class="col-12">
+                        </div>
+                        <div class="control row">
+                            <button id="buyTicket" class="col-12 col-md-4 btn btn-danger">
+                                <i class="fa-solid fa-ticket"></i>
+                                Mua vé
+                            </button>
+                            <button id="watchTrailer" class="col-12 col-md-4 btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#modalTrailerFilm">
+                                <i class="fa-solid fa-film"></i>
+                                Trailer
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content_right col-12 col-md-6 col-lg-7 col-xl-8">
+                        <div class="title">
+                            <span>Mai</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="infoFilm">
+                            <div>
+                                Đạo diễn:
+                                <span>Trấn Thành</span>
+                            </div>
+                            <div>
+                                Diễn viên:
+                                <span>Phương Anh Đào, Tuấn Trần</span>
+                            </div>
+                            <div>
+                                Thể loại:
+                                <span>Tâm lý tình cảm</span>
+                            </div>
+                            <div>
+                                Khởi chiếu:
+                                <span>12/02/2024</span>
+                            </div>
+                            <div>
+                                Thời lượng:
+                                <span>120 phút</span>
+                            </div>
+                            <div>
+                                Nội dung phim:
+                                <span class="txtNoiDung">
+                                    Bộ phim Mai xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai (do Phương Anh Đào
+                                    thủ vai)
+                                    có số phận rất đặc biệt. Bởi làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn
+                                    soi mói, phán
+                                    xét từ những người xung quanh. Và rồi Mai gặp Dương (Tuấn Trần) - chàng trai đào hoa
+                                    lãng tử.
+                                    Những tưởng bản thân không còn thiết tha yêu đương và mưu cầu hạnh phúc cho riêng
+                                    mình thì khao
+                                    khát được sống một cuộc đời mới trong Mai trỗi dậy khi Dương tấn công cô không khoan
+                                    nhượng. Họ
+                                    cho mình những khoảnh khắc tự do, say đắm và tràn đầy tiếng cười. Liệu cặp đôi ấy có
+                                    nắm giữ được
+                                    niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay nghiệt, bất công?
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalTrailerFilm" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <iframe width="800" height="515" src="https://www.youtube.com/embed/EX6clvId19s?si=aiOuhcG2Ou3XrVys"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h1>CYBER PHIM</h1>
+                    <p>Cyber phim laf website đặt vé xem phim trực tuyến tại các rạp BHD, Galaxy, Cinebox. Cyber Phim
+                        giúp bạn mua vé trước để không phải đến rạp sớm xếp hàng mua vé hoặc lo lắng về việc hết vé. Bên
+                        cạnh đó, Cyber Phim còn cập nhật thường xuyên ccas thông tin phim như trailer, tin tức, thông
+                        tin rạp, suất chiếu, các đnahs giá phim, chương trình khuyến mãi từ rạp và của riêng CyberPhim
+                        dành cho người sử dụng</p>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 offset-xl-1 col-xl-3 item">
+                            <h5 class="vct">Về chung tôi</h5>
+                            <ul>
+                                <li class="item_content"><a href="">Giới thiệu</a></li>
+                                <li><a href="">Lịch chiếu</a></li>
+                                <li><a href="">Cụm rạp</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 offset-sm-1 col-sm-6 offset-xl-1 col-xl-3 item">
+                            <h5 class="cskh">Chăm sóc khách hàng</h5>
+                            <ul>
+                                <li><a href="">Trung tâm hỗ trợ</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Quy chế hoạt động</a></li>
+                                <li><a href="">Quyền lợi thành viên</a></li>
+                                <li><a href="">Câu hỏi thường gặp</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 offset-xl-1 col-xl-3 item">
+                            <h5 class="dt">Đối tác</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./images/logo_cgv.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_bhd.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_beta.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_galaxycine.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_mega.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/logo_lotteria.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/momo.jpg" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <img src="./images/zalopay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
